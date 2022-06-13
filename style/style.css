@@ -2,5 +2,8 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  wudth: ;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
