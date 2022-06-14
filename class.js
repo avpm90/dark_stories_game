@@ -31,7 +31,7 @@ class Game {
         question:
           "Walking down a hallway, a man notices that a scream echoes through the place when the light flashes.",
         correctAnswer:
-          "The man, walking in the prison corridor, next to the electric chair, hears the screams of the convicts in the chair.",
+          "The man, walking in the prison corridor, close to the electric chair, hears the screams of the convicts about to die.",
         options: [
           "The man, walking in the prison corridor, close to the electric chair, hears the screams of the convicts about to die.",
 

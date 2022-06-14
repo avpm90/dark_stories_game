@@ -1,5 +1,4 @@
 const games = new Game();
-console.log(games.darkStories[0].question);
 
 const gameBoard = document.getElementById("gameBoard");
 const question = document.getElementById("question");
@@ -22,10 +21,15 @@ function printQuestions() {
     gameBoard.appendChild(button);
 
     button.addEventListener("click", () => {
-      const clicked = event.target;
-      console.log(clicked);
+      const clickedBtn = event.target.innerText;
+      console.log(clickedBtn);
+      if (clickedBtn == games.darkStories[0].correctAnswer) {
+        goToNext();
+      }
     });
   }
 }
 
-function getRightOption() {}
+//function goToNext() {}
+
+//function getRightOption() {}
