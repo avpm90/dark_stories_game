@@ -6,26 +6,30 @@ const startBtn = document.getElementById("start");
 const confirmBtn = document.getElementById("confirm");
 
 startBtn.addEventListener("click", () => {
-  printQuestions();
+  printQuestions(0);
   startBtn.classList.add("hide");
 });
 
-confirmBtn.addEventListener("click", () => {});
+confirmBtn.addEventListener("click", () => {
+  let currentElement = 0;
+  if (currentElement < games.darkStories.length) {
+    currentElement++;
+  }
+  printQuestions(currentElement);
+});
 
-function printQuestions() {
-  question.innerText = games.darkStories[0].question;
+function printQuestions(currentElement) {
+  question.innerText = games.darkStories[currentElement].question;
 
-  for (let i = 0; i < games.darkStories[0].options.length; i++) {
+  for (let i = 0; i < games.darkStories[currentElement].options.length; i++) {
     const button = document.createElement("button");
-    button.innerText = games.darkStories[0].options[i];
+    button.innerText = games.darkStories[currentElement].options[i];
     gameBoard.appendChild(button);
 
     button.addEventListener("click", () => {
       const clickedBtn = event.target.innerText;
       console.log(clickedBtn);
-      if (clickedBtn == games.darkStories[0].correctAnswer) {
-        goToNext();
-      }
+    
     });
   }
 }
@@ -33,3 +37,11 @@ function printQuestions() {
 //function goToNext() {}
 
 //function getRightOption() {}
+
+
+
+/* eu já tenho o botão
+não quero que ele crie de novoo mesmo botão quando ele excute a segunda vez
+
+criar um if
+ */
