@@ -1,3 +1,36 @@
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 600%;
+  color: darkviolet;
+  text-shadow: blue;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+  text-shadow: #020819 8px -20px 9px;
+}
+
+h2 {
+  color: darkviolet;
+  font-size: 200%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-color: brown;
+}
+
+button {
+  background-color: darkviolet;
+  text-align: center;
+  font-style: oblique;
+  font-size: 150%;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkorange;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -7,6 +40,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .hide {
