@@ -12,12 +12,6 @@ startBtn.addEventListener("click", () => {
   startBtn.classList.add("hide");
 });
 
-confirmBtn.addEventListener("click", () => {
-  if (currentElement < games.darkStories.length) {
-    currentElement++;
-  }
-  printQuestions(currentElement);
-});
 
 // for está colocando o eventlistener em todas as opções e quando clicados, chama checkQ com a opção clicada
 for (let i = 0; i < allOptions.length; i++) {
@@ -38,7 +32,13 @@ function printQuestions(currentElement) {
 
 function checkQuestion(option) {
   if (option === games.darkStories[currentElement].correctAnswer) {
-    console.log("acertou");
+    confirmBtn.addEventListener("click", () => {
+      if (currentElement < games.darkStories.length) {
+        currentElement++;
+      }
+      printQuestions(currentElement);
+    });
+    
   } else {
     console.log("sefu");
   }
