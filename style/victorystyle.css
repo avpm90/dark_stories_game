@@ -1,12 +1,30 @@
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 600%;
+  color: darkviolet;
+  text-shadow: blue;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+  text-shadow: #020819 8px -20px 9px;
+}
+
+h2 {
+  color: darkviolet;
+  font-size: 200%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-color: brown;
+}
+
 button {
   background-color: darkviolet;
-  float:unset
   text-align: center;
   font-style: oblique;
   font-size: 150%;
   font-family: "Times New Roman", Times, serif;
-  position: ;
-  margin: 50%;
+  margin: 0.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +42,8 @@ body {
   align-items: center;
   background-image: url("../assets/images/victory.jpg");
   background-size: 100%;
+}
+
+.hide {
+  display: none;
 }
