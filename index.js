@@ -19,7 +19,6 @@ startBtn.addEventListener("click", () => {
   printQuestions(0);
   startBtn.classList.add("hide");
   gameBoard.setAttribute("class", "show");
-  
 });
 
 confirmBtn.addEventListener("click", () => {
