@@ -4,7 +4,7 @@ h1 {
   font-weight: 1000;
   vertical-align: top;
   text-align: center;
-  color: black;
+  color: white;
   text-shadow: 1px 1px 2px #e5eef0;
 }
 
@@ -75,7 +75,7 @@ button {
     font-weight: 1000;
     vertical-align: top;
     text-align: center;
-    color: black;
+    color: white;
     text-shadow: 1px 1px 2px #e5eef0;
   }
 
