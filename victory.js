@@ -1,6 +1,3 @@
 const playAgain = document.getElementById("play-again");
 
-playAgain.addEventListener("click", () =>{
-
-    
-})
+playAgain.addEventListener("click", () => {});

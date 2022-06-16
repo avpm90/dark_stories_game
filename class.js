@@ -24,7 +24,7 @@ class Game {
 
           "The man first asked for water then, for a photo with the bartender pointing the gun at him, so he could miss work.",
 
-          "The man had entered the bar to get rid of a bout of hiccups, looking for a glass of water. The bartender, realizing the situation, pulls out his gun and points it at the man in order to heal him with a scare.",
+          "A man had entered the bar to get rid of a bout of hiccups, looking for a glass of water. The bartender, realizing the situation, pulls out his gun and points it at the man in order to heal him with a scare.",
         ],
       },
       {

@@ -4,33 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css"/>
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Dark Stories</title>
   </head>
   <body>
+    <div id="game">
+      <audio autoplay>
+        <source
+          src="./assets/sounds/super-mario-bros_8nlGIsH.mp3"
+          type="audio/wav"
+        />
+      </audio>
 
-<audio autoplay>
-<source src="./assets/sounds/super-mario-bros_8nlGIsH.mp3" type="audio/wav"/>
-</audio>
-
-    <h1>Dark Stories</h1>
-    <button id="start">PLAY</button>
-    <div >
-      <h2 id="question"></h2>
+      <h1>Dark Stories</h1>
+      <button id="start">PLAY</button>
+      <div>
+        <h2 id="question"></h2>
+      </div>
+      <div id="gameBoard">
+        <button class="options"></button>
+        <button class="options"></button>
+        <button class="options"></button>
+      </div>
+      <button id="confirm" class="hide">CONFIRM</button>
     </div>
-     <div id="gameBoard">
-      <button class="options"></button>
-      <button class="options"></button>
-      <button class="options"></button>
-    </div>
 
-    <button id="confirm">CONFIRM</button>
+    <div class="hide" id="win">
+      <div class="victory">YOU WON</div></div>
+    <div class="hide" id="lose"><div class="defeat">YOU LOSE</div></div>
+
     <script src="./class.js"></script>
     <script src="./index.js"></script>
-
+  </body>
 </html>
-
-
-
-
-
