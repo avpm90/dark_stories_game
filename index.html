@@ -15,9 +15,11 @@
   </head>
   <body>
     <div id="game">
-      <h1>Dark Stories</h1>
-      <button id="start">PLAY</button>
-
+      <div class="flex-column">
+        <h1>Dark Stories</h1>
+        <button id="start">PLAY</button>
+        <button id="confirm" class="hide">CONFIRM</button>
+      </div>
       <div>
         <h2 id="question"></h2>
       </div>
@@ -26,17 +28,15 @@
         <button class="options"></button>
         <button class="options"></button>
       </div>
-      <button id="confirm" class="hide">CONFIRM</button>
     </div>
 
     <div class="hide" id="win">
-      <div class="victory"><H1>VICTORY</H1></div>
+      <div class="victory"><h1>VICTORY</h1></div>
     </div>
     <div class="hide" id="lose">
-      <div class="defeat"><H1>GAME OVER</H1></div>
+      <div class="defeat"><h1>GAME OVER</h1></div>
     </div>
     <button class="hide" id="play2">PLAY AGAIN</button>
-
 
     <script src="./class.js"></script>
     <script src="./index.js"></script>

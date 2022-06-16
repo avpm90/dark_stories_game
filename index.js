@@ -11,33 +11,31 @@ const win = document.getElementById("win");
 const lose = document.getElementById("lose");
 let currentElement = 0;
 
-//playAgain.addEventListener("click", () => {
-// lose.setAttribute("class", "hide");
-//  win.setAttribute("class", "hide");
-//  question.setAttribute("class", "show");
-//  game.setAttribute("class", "show");
-//  });
+playAgain.addEventListener("click", () => {
+  location.reload();
+});
 
 startBtn.addEventListener("click", () => {
   printQuestions(0);
   startBtn.classList.add("hide");
   gameBoard.setAttribute("class", "show");
+  
 });
 
 confirmBtn.addEventListener("click", () => {
-  if (currentElement < games.darkStories.length) {
+  if (currentElement < games.darkStories.length - 1) {
     currentElement++;
+    console.log(currentElement);
     gameBoard.setAttribute("class", "show");
     question.setAttribute("class", "show");
+    printQuestions(currentElement);
   } else {
     game.setAttribute("class", "hide");
     playAgain.setAttribute("class", "show");
     win.setAttribute("class", "show");
   }
-  printQuestions(currentElement);
   confirmBtn.setAttribute("class", "hide");
 });
-
 
 for (let i = 0; i < allOptions.length; i++) {
   allOptions[i].addEventListener("click", (event) => {
@@ -51,8 +49,8 @@ function printQuestions(currentElement) {
 
   for (let i = 0; i < games.darkStories[currentElement].options.length; i++) {
     allOptions[i].innerText = games.darkStories[currentElement].options[i];
-  }}
-
+  }
+}
 
 function checkQuestion(option) {
   if (option === games.darkStories[currentElement].correctAnswer) {
@@ -63,5 +61,5 @@ function checkQuestion(option) {
     game.setAttribute("class", "hide");
     playAgain.setAttribute("class", "show");
     lose.setAttribute("class", "show");
-  }}
-
+  }
+}

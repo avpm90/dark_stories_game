@@ -5,7 +5,7 @@
     font-weight: 1000;
     vertical-align: top;
     text-align: center;
-    color:black;
+    color: black;
     text-shadow: 1px 1px 2px #e5eef0;
   }
 
@@ -13,7 +13,7 @@
     font-size: 130%;
     text-align: center;
     text-shadow: 1px 1px 2px #e5eef0;
-    color:white;
+    color: white;
     font-weight: 1000;
     width: 99%;
   }
@@ -37,6 +37,21 @@
 
   .show {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-column h1 {
+    position: absolute;
+    top: 0;
   }
 
   button {
@@ -44,8 +59,7 @@
     margin: 05px;
     border-radius: 2rem;
     color: white;
-    display:flex;
-    
+
     font-weight: 600;
     line-height: 1;
     padding: 0.8rem 0.6rem;
