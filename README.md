@@ -1,6 +1,5 @@
-# dark_stories_game
+# Quiz Game: Dark Stories:
 
-Quiz Game: Dark Stories:]
 About the game:
 This is a simpler and smaller version of the actual Dark Stories.
 
